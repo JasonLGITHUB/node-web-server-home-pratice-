@@ -28,7 +28,7 @@ app.get('', (req, res) => {
 app.get('/about', (req, res) => {
     res.render('about', {
         title: 'About Us',
-        name: 'Axson Engineering'
+        name: 'Axson Engineering, Copy right Jason'
     })
 })
 
