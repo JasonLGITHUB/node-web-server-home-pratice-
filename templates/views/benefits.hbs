@@ -1,0 +1,355 @@
+
+
+<!DOCTYPE html>
+
+<!--<html xmlns="http://www.w3.org/1999/xhtml">
+    <head id="ctl00_Head1"><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" /><meta name="viewport" content="width=device-width, initial-scale=1" /><link rel="icon" href="../../Images/check2pay-logo.gif" type="image/x-icon" />
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <!--      <title>
+	Check2Pay
+</title>-->
+    
+<head>
+    <title>Support</title>
+
+            <link rel="stylesheet" href="/css/styles.css">  
+            <script src="../public/js/form.js"></script>
+            <link rel="stylesheet" href="/css/form.css" >
+ 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+        <!-- Icon css link -->
+        <link href="../../Content/css/font-awesome.min.css" rel="stylesheet" /><link href="../../Content/vendor/elegant-icon/style.css" rel="stylesheet" /><link href="../../Content/vendor/themify-icon/themify-icons.css" rel="stylesheet" />
+        <!-- Bootstrap -->
+        <link href="../../Content/css/bootstrap.min.css" rel="stylesheet" />
+
+        <!-- Rev slider css -->
+        <link href="../../Content/vendor/revolution/css/settings.css" rel="stylesheet" /><link href="../../Content/vendor/revolution/css/layers.css" rel="stylesheet" /><link href="../../Content/vendor/revolution/css/navigation.css" rel="stylesheet" /><link href="../../Content/vendor/animate-css/animate.css" rel="stylesheet" />
+
+        <!-- Extra plugin css -->
+        <link href="../../Content/vendor/owl-carousel/owl.carousel.min.css" rel="stylesheet" /><link href="../../Content/css/style.css" rel="stylesheet" /><link href="../../Content/css/responsive.css" rel="stylesheet" /><link href="../../Content/css/Paypal.css" rel="stylesheet" />
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <!-- <script type="text/javascript" src="../../Content/js/jquery-3.2.1.min.js"></script> -->
+        <!--[if lt IE 9]>
+              <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+        <![endif]-->
+        <!--[if gte IE 9]><!-->
+            <script type="text/javascript" src="../../Content/js/jquery-3.2.1.min.js"></script>
+        <!--<![endif]-->
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script type="text/javascript" src="../../Content/js/popper.min.js"></script>
+        <script type="text/javascript" src="../../Content/js/bootstrap.min.js"></script>
+
+        <script>
+            function DisplayAds() {
+                var _modal = $(".bd-example-modal-lg");
+                _modal.modal('toggle');
+
+                var test = setInterval(function () {
+                    if (_modal.hasClass("show")) {
+                        _modal.modal('toggle');
+                    }
+                    clearInterval(test);
+                }, 10000);
+            }
+        </script>
+    </head>
+    <body>
+
+        <!--================Header Menu Area =================-->
+    <!--    <header class="main_menu_area">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="../MainPage/Main.aspx" style="padding:0;"><img src="../../Content/img/newcheck2pay.png" alt="" height="90" /></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" 
+                        aria-label="Toggle navigation" style="outline-style:none;">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto" style="color:black;">
+                        <li class="nav-item">
+                            
+                            
+                        </li>
+                        <li class="nav-item">
+                            <a id="ctl00_aMembers" class="nav-link" href="../Merchant/MerchantPage.aspx">Clients</a>
+                            
+                        </li>
+                        <li class="nav-item">
+                            <a id="ctl00_aAgents" class="nav-link" href="../Reseller/ResellerPage.aspx">Agents</a>
+                            
+                        </li>
+                        <li class="nav-item">
+                            <a id="ctl00_aBenefits" class="nav-link" href="Benefits.aspx">Benefits</a>
+                            
+                        </li>
+                        <li class="nav-item">
+                            <a id="ctl00_aCompliance" class="nav-link" href="../Compliance/Compliance.aspx">Compliance</a>
+                            
+                        </li>
+                        <li class="nav-item">
+                            <a id="ctl00_aSupport" class="nav-link" href="../Support/Support.aspx">Support</a>
+                            
+                        </li>
+                        <li class="nav-item">
+                            <a id="ctl00_aSecurityCenter" class="nav-link" href="../SecurityCenter/SecuritySecurityHome.aspx">Security Center</a>
+                            
+                        </li>
+                        <li class="nav-item">
+                            <a id="ctl00_aFAQ" class="nav-link" href="../Faq/Faq.aspx">FAQ</a>
+                            
+                        </li>
+                        <li class="nav-item">
+                            <a id="ctl00_aAboutUs" class="nav-link" href="../AboutUs/AboutUs.aspx">About Us</a>
+                            
+                        </li>
+                        <li class="nav-item" style="margin-right:1em;">
+                            <button id="btnLogin" class="pypl-btn pypl-btn--outline-white pypl-btn--small" style="font-size:12px;" onclick="NavToLogin()">Login</button>
+                        </li>
+                        <li class="nav-item">
+                            <button id="btnSignUp" class="pypl-btn pypl-btn--white pypl-btn--small" style="font-size:12px" onclick="NavToSignUp()">Sign-Up</button>                             
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header> -->
+        <!--================End Header Menu Area =================-->
+
+        <form name="aspnetForm" method="post" action="Benefits.aspx" id="aspnetForm">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTcwODg1MTE2NmRkTPe6ONLZNzAmQJ/pm5Fez8Dkpq0=" />
+</div>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="D4F0EA62" />
+</div>
+        <div>
+            
+    <div class="creative_feature_area">
+        <div class="container-fluid" style="margin-top:7em;padding-top:2em;padding-bottom:5em;"> <!-- DO NOTE REMOVE THE STYLE -->
+            <div class="row justify-content-md-center">
+                <div class="col-sm-9">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="card-title">
+                                        <h4><b>Benefits of using Check2Pay</b></h4>
+                                        <hr />
+
+                                        <div class="row justify-content-md-center" style="margin-bottom:1em;">
+                                            <div class="card" style="width: 25rem; margin-left:1em;margin-bottom:1em;">
+                                                <img class="card-img-top" src="../../Content/img/Zopper-Retail-Growth.jpg" alt="Card image cap" />
+                                                <div class="card-body">
+                                                    <h6 class="card-title">Sales Increase through Market Expansion</h6>
+                                                    <hr />
+                                                    <p class="card-text text-justify">
+                                                        Expand available payment options for your customers by offering e-checks. This opens up a brand new
+                                                        demographic of customers who prefer to transact minus the worry of fraud and identity theft that are commonly
+                                                        rampant in other traditional payment methods, thus increasing sales. E-checks securely require account validation
+                                                        and customer authentication processes that identify bad checks within seconds.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <div class="card" style="width: 25rem; margin-left:1em;margin-bottom:1em;">
+                                                <img class="card-img-top" src="../../Content/img/Safe-Smart-Simple3.jpg" alt="Card image cap"/>
+                                                <div class="card-body">
+                                                    <h6 class="card-title">Safe, Smart and Simple</h6>
+                                                    <hr />
+                                                    <p class="card-text text-justify">
+                                                        Our secure Data Processing is a smart choice for the environment. It helps reduce more than 67.4 million gallons
+                                                        of fuel and 3.6 million tons of greenhouse emissions created by transporting paper checks.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <div class="card" style="width: 25rem; margin-left:1em;margin-bottom:1em;">
+                                                <img class="card-img-top" src="../../Content/img/Stop-Fraud.jpg" alt="Card image cap"/>
+                                                <div class="card-body">
+                                                    <h6 class="card-title">Greater Efficiency and Reduced Fraud</h6>
+                                                    <hr />
+                                                    <p class="card-text text-justify">
+                                                        Our smart and impregnable automated data processing system cuts down the number of people who must handle
+                                                        the check, minimizing the potential for error and fraud. We regularly monitor and update our negative accounts
+                                                        database to help further decrease fraudulent activity.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row justify-content-md-center" style="margin-bottom:1em;margin-bottom:1em;">
+                                            <div class="card" style="width: 25rem; margin-left:1em;">
+                                                <img class="card-img-top" src="../../Content/img/network-security.jpg" alt="Card image cap"/>
+                                                <div class="card-body">
+                                                    <h6 class="card-title">Heightened Security</h6>
+                                                    <hr />
+                                                    <p class="card-text text-justify">
+                                                        Electronic data conversion leverages the latest and most advanced protection features such as encryption and
+                                                        message authentication. Our unique three level encryption and state of the art message authentication methods
+                                                        are considered as one of the most secure in the data processing industry.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <div class="card" style="width: 25rem; margin-left:1em;margin-bottom:1em;">
+                                                <img class="card-img-top" src="../../Content/img/Authentication.jpg" alt="Card image cap"/>
+                                                <div class="card-body">
+                                                    <h6 class="card-title">Diligent Authentication</h6>
+                                                    <hr />
+                                                    <p class="card-text text-justify">
+                                                        First, we verify that the person providing the data information is authorized to use that checking account. We then
+                                                        proceed to confirm the customer's name, checking account and check numbers, as well as the billing address
+                                                        associated with the said checking account.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script type="text/javascript" src="../../Content/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+   
+            $("#btnLogin").attr("style", "color:#0070ba;box-shadow:0 0 0 1px #0070ba, 0 0 0 1px #0070ba;");
+
+            $("#btnSignUp").attr("style", "background:#0070ba;color:#fff;");
+   
+            $(".navbar_fixed").attr("style", "background:white;");
+                
+            $(window).scroll(function () {
+                $(".navbar_fixed").attr("style", "background:white;");
+            });
+            
+            if (navigator.userAgent.match(/Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile/i)) {
+                $(".navbar-toggler").find("span").attr("style","background:black");
+                
+                $("#btnLogin").parent().attr("style","padding:0px 20px;margin-bottom:1rem;");
+                
+                $("#btnSignUp").parent().attr("style","padding:0px 20px;margin-bottom:1rem;");
+                
+            } else {
+                $(".navbar_fixed").attr("style", "background:white;");
+                
+                $(window).scroll(function () {
+                    $(".navbar_fixed").attr("style", "background:white;");
+                });
+
+                $(".nav-link").each(function (index) {
+                    $(this)
+                        .attr("style", "color:#2c2e2f;")
+                        .mouseover(function () {
+                            $(this).attr("style", "color:#20c997;")
+                            fnSetStyle($(this));
+                        })
+                        .mouseout(function () {
+                            $(this).attr("style", "color:#2c2e2f;")
+                            fnSetStyle($(this));
+                        });
+                    fnSetStyle($(this));
+                });
+            }
+        });
+
+    </script>
+
+        </div>
+        </form>
+
+        <!--================Footer Area =================-->
+        <footer class="footer_area">
+            <div class="copy_right_area">
+                <div class="container">
+                    <div class="row justify-content-center" style="height:3em;padding-top:1ex;">
+                        <h5 class="text-light">Copyright &copy; 2011 Check2Pay</h5>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--================End Footer Area =================-->
+
+
+       
+        <!-- Rev slider js -->
+        <script type="text/javascript" src="../../Content/vendor/revolution/js/jquery.themepunch.tools.min.js"></script>
+        <script type="text/javascript" src="../../Content/vendor/revolution/js/jquery.themepunch.revolution.min.js"></script>
+        <script type="text/javascript" src="../../Content/vendor/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+        <script type="text/javascript" src="../../Content/vendor/revolution/js/extensions/revolution.extension.video.min.js"></script>
+        <script type="text/javascript" src="../../Content/vendor/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+        <script type="text/javascript" src="../../Content/vendor/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+        <script type="text/javascript" src="../../Content/vendor/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+        <script type="text/javascript" src="../../Content/vendor/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+        <!-- Extra plugin css -->
+        <script type="text/javascript" src="../../Content/vendor/counterup/jquery.waypoints.min.js"></script>
+        <script type="text/javascript" src="../../Content/vendor/counterup/jquery.counterup.min.js"></script>
+        <script type="text/javascript" src="../../Content/vendor/counterup/apear.js"></script>
+        <script  type="text/javascript"src="../../Content/vendor/counterup/countto.js"></script>
+        <script  type="text/javascript"src="../../Content/vendor/owl-carousel/owl.carousel.min.js"></script>
+        <script type="text/javascript" src="../../Content/vendor/parallaxer/jquery.parallax-1.1.3.js"></script>
+        <!--Tweets-->
+        
+
+        <script type="text/javascript" src="../../Content/js/theme.js"></script>
+
+        <script type="text/javascript">
+
+            if (navigator.userAgent.match(/Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile/i)) {
+
+                $("#btnLogin").parent().attr("style", "padding:0px 20px;margin-bottom:1rem;");
+
+                $("#btnSignUp").parent().attr("style", "padding:0px 20px;margin-bottom:1rem;");
+
+            }
+
+            function fnSetStyle($element) {
+
+                if (fnGetUrlParameter("menu") == $element.text().replace(/\s/g, '')) {
+                    var style = $element.attr("style");
+                    style = style + "font-weight: bold;";
+
+                    $element.attr("style", style);
+                }
+            }
+
+            function fnGetUrlParameter(sParam) {
+                var sPageURL = window.location.search.substring(1);
+                var sURLVariables = sPageURL.split('&');
+
+                for (var i = 0; i < sURLVariables.length; i++) {
+                    var sParameterName = sURLVariables[i].split('=');
+                    if (sParameterName[0] == sParam) {
+                        return sParameterName[1];
+                    }
+                }
+            }
+
+            function NavToLogin() {
+                //location.href = '@Url.Action("Login", "LandingPage")';
+                window.location = '../../Web/Authentication/Login.aspx';
+            }
+
+            function NavToSignUp() {
+                //location.href = '@Url.Action("SignUp", "LandingPage")';
+                window.location = '../../Web/Merchant/MerchantApplication.aspx';
+            }
+        </script>
+    </body>
+</html>
