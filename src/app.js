@@ -48,8 +48,8 @@ app.get('/MerchantRegisterForm', (req, res) => {
         name: 'Axson Engineering'
     })
 })
-app.get('/login', (req, res) => {
-    res.render('login', {
+app.get('/Login', (req, res) => {
+    res.render('Login', {
         clientsText: 'This is a Login window for Clients !',
         title: 'Clients Login',
         name: 'Axson Engineering, Copy right:Jason Liang'
