@@ -52,7 +52,7 @@ app.get('/login', (req, res) => {
     res.render('login', {
         clientsText: 'This is a Login window for Clients !',
         title: 'Clients Login',
-        name: 'Axson Engineering'
+        name: 'Axson Engineering, Copy right:Jason Liang'
     })
 })
 app.get('/check4digipay', (req, res) => {
