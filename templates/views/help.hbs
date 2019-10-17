@@ -1,88 +1,113 @@
 <!DOCTYPE html>
 
-<html>
-    <head>
-             
-           <title>Support</title>
-            <link rel="stylesheet" href="/css/styles.css">  
-            <script src="../public/js/form.js"></script>
-            <link rel="stylesheet" href="/css/form.css" >
-    </head>
-
-    <body>
-            
+<html lang="en">
+ <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width", initial-scale=1, shrink-to-fit=no">   
       
- <head>         
-              <div>      {{>header}}         </div>
 
-           <style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+     <link rel="stylesheet" href="/css/styles.css">  
+    <script src="../public/js/form.js"></script>
+    <link rel="stylesheet" href="/css/form.css" > 
+  
+ <!-- <meta name="viewport" content="width=device-width, initial-scale=1">-->    
+  <!---<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">-->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+      
+  <title>Help</title>  
+
+</head>
+
+<body>
+<header>
+
+<nav class="navbar fixed-top navbar-expand-xl bg-dark navbar-dark justify-content-end ">
+    <a class="navbar-brand" href="/">Home</a>
+    <a href="/MerchantRegisterForm"> <button class="btn btn-success ml-auto mr-1" >Sign Up</button> </a> 
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+        <ul class="navbar-nav text-right">
+            <li class="nav-item active">
+                <a class="nav-link" href="/Login">Login</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="/partners">Partner</a>
+            </li>    
+            <li class="nav-item active">
+                <a class="nav-link" href="/clients">Clients</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="/help">Help</a>
+            </li>
+            </li>
+        </ul>
+    </div>
+</nav>
+           
+    
+
+
+
+           
+          <style>
               
 
                    body {
                        background-color: #79a6d2;
-                       background-image: url("../img/sunsetbirdsF16.png");                       
+                       background-image: url("../img/sunsetbirdsF16.png");                    
                        background-repeat: no-repeat;
-                       background-size: 100% 100%;
+                       background-size: 100% auto;
                        
                       
-           </style> 
-         
-
-  <title>Email Support</title>
-  
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-</head> 
-         <div> 
-           <h2>
-               <style>
-                      h2 {
-                             position: absolute;
-                             left:300px;
-                             top:15px
-                                
-                                }
-               </style>
-          </h2>  </div>
+           </style>
+</header>
              
-<body>
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
  
-   <body bgcolor="#E6E6FA"> </body> 
-     
+        
   <div class = "container margin-left=10px" > 
+
     <h3> {{helpText}} </h3> <!--Email Assistance -->
 
      <img src="../img/gmail_largelogo.jpg" style="margin-left:20px; width:200px;display:block" />
+    
      <h4>Need some help ? Have a question or comment ? E-mail us !</h4>
+<!--+++++++++++++++++++++++++++++++++++++form+++++++++++++++++++++++++++++++++++++-->
 <form> 
      <div class="row">
-    <div class="col-md-6 col-md-offset-3" id="form_container"> <!--block area -->
+     <div class="col-md-6 col-md-offset-3" id="form_container"> <!--light block area -->
        
         <p>
            Please send your message below. We will get back to you at the earliest!
         </p>
+        
         <form role="form" method="post" id="reused_form">
 
-            <div class="row">     
-
+      <div class="row">     
+     </div>
        
-    <div class="form-row">
-  <!--  <div class="form-row">--> 
+ 
+     <div class="form-row"> 
 
     <div class="form-group col-md-6">
       <label for = "inputFirstName">First Name</label> 
       <input type="text" class="form-control" placeholder="First name">
-    </div>
+    </div>  
+
     <div class="form-group col-md-6">
       <label for = "inputFirstName">Last Name</label> 
       <input type="text" class="form-control" placeholder="Last name">
     </div>
-  </div>
-</form>
+
+  
+
     <div class="form-group col-md-6">
       <label for="inputEmail4">Email</label>
       <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
@@ -96,7 +121,7 @@
   <!---========================================== message box =================================-->
   <form role="form" method="post" id="reused_form">
                         <div class="form-row">
-                            <div class="col-sm-13 form-group">
+                            <div class="col-sm-12 form-group">
                                 <label for="message"> Message:</label>
                                 <textarea class="form-control" type="textarea" name="message" id="message" maxlength="6000" rows="7"></textarea>
                             </div>
