@@ -83,6 +83,13 @@ app.get('/partners', (req, res) => {
         name: ' Axson Engineering, Copy right: Jason Liang '
     })
 })
+app.get('/compliance', (req, res) => {
+    res.render('compliance', {
+        clientsText: 'This is some helpful info for Partners !',
+        title: 'Federal Compliance',
+        name: ' Axson Engineering, Copy right: Jason Liang '
+    })
+})
 // //    app.get('/DigiCheck', (req, res) => {
 //     if (!req.query.address){
 //         return res.send({
