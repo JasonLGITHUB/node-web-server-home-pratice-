@@ -93,7 +93,15 @@ app.get('/compliance', (req, res) => {
 app.get('/benefits', (req, res) => {
     res.render('benefits', {
         clientsText: 'This is some helpful info for Partners !',
-        title: 'Benefitse',
+        title: 'Benefits',
+        name: ' Axson Engineering, Copy right: Jason Liang '
+    })
+})
+
+app.get('/spare', (req, res) => {
+    res.render('spare', {
+        clientsText: 'This is some helpful info for Test !',
+        title: 'Spare',
         name: ' Axson Engineering, Copy right: Jason Liang '
     })
 })
