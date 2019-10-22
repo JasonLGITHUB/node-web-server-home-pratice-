@@ -101,7 +101,7 @@ app.get('/benefits', (req, res) => {
 app.get('/spare', (req, res) => {
     res.render('spare', {
         clientsText: 'This is some helpful info for Test !',
-        title: 'Spare',
+        title: 'spare',
         name: ' Axson Engineering, Copy right: Jason Liang '
     })
 })
