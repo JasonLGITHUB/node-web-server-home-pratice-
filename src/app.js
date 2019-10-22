@@ -41,8 +41,8 @@ app.get('/help', (req, res) => {
     })
 })
 //------------------------------------------------
-app.get('/merchantregisterform', (req, res) => {
-    res.render('merchantregisterform', {
+app.get('/MerchantRegisterForm', (req, res) => {
+    res.render('MerchantRegisterForm', {
         clientsText: 'This is some helpful text for Clients !',
         title: 'Merchant Sign Up',
         name: 'Axson Engineering'
