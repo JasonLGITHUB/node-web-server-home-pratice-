@@ -41,15 +41,15 @@ app.get('/help', (req, res) => {
     })
 })
 //------------------------------------------------
-app.get('/MerchantRegisterForm', (req, res) => {
-    res.render('MerchantRegisterForm', {
+app.get('/merchantregisterform', (req, res) => {
+    res.render('merchantregisterform', {
         clientsText: 'This is some helpful text for Clients !',
         title: 'Merchant Sign Up',
         name: 'Axson Engineering'
     })
 })
-app.get('/Login', (req, res) => {
-    res.render('Login', {
+app.get('/login', (req, res) => {
+    res.render('login', {
         clientsText: 'This is a Login window for Clients !',
         title: 'Clients Login',
         name: 'Axson Engineering, Copy right:Jason Liang'
