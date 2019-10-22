@@ -9,6 +9,7 @@
   <!-- <link rel="stylesheet" href="/css/styles.css"> -->
     <script src="../public/js/form.js"></script>
     <link rel="stylesheet" href="/css/form.css">
+    <link rel="stylesheet" href="/css/spare.css">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
     crossorigin="anonymous">
@@ -58,31 +59,19 @@
 <div style="margin-top:100px;"></div>
 <!--+++++++++++++++++++++++++++++++++++++++++++++++++++ menu bar++++++++++++++++++-->
 
-    
-           
-          <style>
-              
-
-                   body {
-                       background-color: #79a6d2;
-                                           
-                       background-repeat: no-repeat;
-                       background-size: 100% auto;
-                       
-                      
-           </style>
-
+          
+        
   
-
          
 </header>
 
 <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 <body>
-
+ 
 
 <div class="container mt-5">
-   
+   <h2 class"text-">  Title Of this Page  </h2>
+
     <div class ="row" >
       <div class="col-sm-6 col-md-8 col-lg-9 col-xl-10" style="border:1px solid #333"> <!--12 is full 6, 8 ,9,10 same clumn --> 
         <ul>
@@ -95,38 +84,94 @@
     
   <div class="col"  style="border:1px solid skyblue">Equal Width</div>
       <div class="col"  style="border:1px solid sienna">Equal Width</div>
-
+<!--=======================================================================================-->
       <div class="col"  style="border:1px solid #333">Equal Width
-          <img class="ml-2 mt-3" src="../img/4F16.png" style="  width:100px;display:block" /> 
+          <img class=" p-3" src="../img/4F16.png" style="  width:100px;display:block" /> 
       </div>
       <div class="col"  style="border:1px solid #333">Equal Width
-          <img class="ml-2 mt-3" src="../img/DSC_1059.png" style="  width:100px;display:block" /> 
+          <img class="p-3" src="../img/DSC_1059.png" style="  width:100px;display:block" /> 
       </div>
  </div>
-
+<!--========================================= =stack colmuns ============================================-->
    <div class="row">
-      <div class="col-sm-3 bg-primary" style="border:1px solid #333">Equal Width Stack
-          <img class="ml-2 mt-3" src="../img/security21.png" style="  width:100px;display:block" /> 
+     
+      <div class="col-sm-4 bg-primary" style="border:1px solid #333">Equal Width Stack
+          <img class="responsive" src="../img/security21.png" style="  width:100px;display:block" /> 
       </div>
+     
       <div class="col-sm-6 bg-white p-3" style="border:1px solid #333 bg:yellow">
                  <p>Equal Width Stack</p> 
-                 <img class="responsive" width="600" height="400" src="../img/security21.png" >
-          </div>
+                 <img class="responsive" width="500" height="300" src="../img/security21.png" >
+      </div>
     
 
-      <div class="col-sm-3 bg-success" style="border:1px solid #333">Equal Width Stack
-        <img class="responsive" width="600" height="400"  src="../img/security21.png" /> 
+      <div class="col-sm-2 bg-success" style="border:1px solid #333">Equal Width Stack
+        <img class="responsive"  width="200" height="100"src="../img/security21.png" /> 
 
-      </div>       
+      </div> 
     </div>
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
       <div class="row">
       <div class="col-sm-6 bg-secondary"  style="border:1px solid skyblue">Equal Width
           <img class="ml-2 mt-3" src="../img/4F16.png" style="  width:400px;display:block" /> 
       </div>
       <div class="col-sm-6 bg-dark"  style="border:1px solid sienna">Equal Width
-        </div>
+         
+          <img class="ml-2 mt-3" src="../img/4F16.png" class="img-thumbnail" style="  width:400px;display:block" />
         </div>
 
+ <!--+++++++++++++++++++++++++++++++++++++++++++ thumbnail ++++++++++++++++++++++++++++++++++++++++++++++++++-->     
+      <div class = "container-thumbnail"> 
+          <h2><p>Image Gallery</p></h2>  
+  <p>The .thumbnail class can be used to display an image gallery.</p>
+  <p>The .caption class adds proper padding and a dark grey color to text inside thumbnails.</p>
+  <p>Click on the images to enlarge them.</p>
 
+  <div class="row"> 
+
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="../img/DSC_1059.png" target="_blank">
+          <img src="../img/DSC_1059.png" class="img-thumbnail" alt="Lights" style="width:100%">
+          <div class="caption">
+            <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="../img/DSC_birdstree.png" target="_blank">
+          <img src="../img/DSC_birdstree.png" class="img-thumbnail"alt="HB" style="width:100%">
+          <div class="caption">
+            <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="../img/DSC_wetland.png" target="_blank">
+          <img src="../img/DSC_wetland.png" class="img-thumbnail" alt="HB" style="width:100%">
+          <div class="caption">
+            <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{{>footer}}
+
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
 
     </body>
+    </html>
