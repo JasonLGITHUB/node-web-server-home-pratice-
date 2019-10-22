@@ -1,0 +1,12 @@
+ 
+body {
+  background: lightblue;
+}
+
+.content {
+  max-width: 2000;
+  margin: auto;
+  background: white;
+  padding: 10px;
+}
+ 

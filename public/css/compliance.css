@@ -5,8 +5,11 @@ body {
 }
 
 .content {
-  max-width: 500px;
+  max-width: 800px;
   margin: auto;
-  background: white;
+  background: lightskyblue;
   padding: 10px;
 }
+
+
+
