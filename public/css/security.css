@@ -10,7 +10,12 @@
             font-weight: 300;
             background-color: #DCCA98;
             margin-top:0px
+         
         }
+
+        .responsive {
+            width: 100%;
+            height: auto; }
 
         p {
             padding: 0 10px;

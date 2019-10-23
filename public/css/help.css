@@ -1,0 +1,25 @@
+
+
+                               
+                   body {
+
+                  
+                       background-color: #79a6d2;
+                                      
+                       background-repeat: no-repeat;
+                       background-size: 100% auto;
+                       margin-top: 150px;
+                      
+                   }
+
+                   footer {
+
+                    columns: #888888;
+                    Border-top:1px solid #b4afaf;
+                    margin-top:16px;
+                    padding: 16px 0;
+                    margin-left: 50;
+                    text-align: center;
+                }
+
+                
