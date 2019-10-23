@@ -1,6 +1,7 @@
  
 body {
   background: lightblue;
+  padding-top: 50px;
 }
 
 .content {
@@ -23,3 +24,14 @@ body {
   padding: 20px;
   font-size: 30px;
 }
+
+footer { 
+               
+    columns: #888888;
+    Border-top:1px solid #b4afaf;
+    margin-top:16px;
+    padding: 16p x 0;
+    margin-left: 30;
+    text-align: center;
+
+  }

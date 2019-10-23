@@ -1,0 +1,20 @@
+
+                   body {
+                       
+                    background-image: url("../img/DSC_9461.png");                     
+                    background-repeat: no-repeat;
+                    background-size: 150% auto;
+                    padding-top: 150 em;
+
+                   }
+
+                   footer { 
+               
+                    columns: #888888;
+                    Border-top:1px solid #b4afaf;
+                    margin-top:16px;
+                    padding: 16p x 0;
+                    margin-left: 30;
+                    text-align: center;
+    
+                  }
