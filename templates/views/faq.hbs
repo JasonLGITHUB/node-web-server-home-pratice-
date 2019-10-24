@@ -42,13 +42,13 @@
       <div  class="card">
         <div class="card-header">
           <h6>
-            <a href="#collapse-q1" data-parent ="#accordion" data-toggle="collapse" >
+            <a href="#collapse-q1" data-parent ="#accordion" data-toggle="collapse"  >
               1.  What is a Member Account?
             </a>
           </h6>
         </div>
 
-        <div id="collapse-q1" class="collapse show">
+        <div id="collapse-q1" class="collapse" >
           <div class="card-body">
                It is a type of account that allows businesses to accept payments by check. A member account is established under
                         an agreement between CheckDigit2Pay and a member for the settlement of transactions. Members are legally held by
@@ -100,7 +100,7 @@
           </h6>
         </div>
 
-        <div id="collapse-q4" class="collapse show">
+        <div id="collapse-q4" class="collapse">
           <div class="card-body">
                 Transactions from Monday to Sunday will be paid the following Friday.
           </div>
@@ -115,7 +115,7 @@
           </h6>
         </div>
 
-        <div id="collapse-q5" class="collapse show">
+        <div id="collapse-q5" class="collapse">
           <div class="card-body">
                  We have 5 stages of security in our gateway to make sure everything is secured and protected. Aside from the
                     security programmed by Check2Pay, we also follow the same security policy’s by the PCI-DSS compliance authority.
@@ -131,7 +131,7 @@
           </h6>
         </div>
 
-        <div id="collapse-q6" class="collapse show">
+        <div id="collapse-q6" class="collapse">
           <div class="card-body">
               Our office is open from Monday to Friday during office hours. However, to ensure quality service,
                     our support@checKDigit2pay.com will answer all inquiries or issues regarding your account 24/7..
@@ -148,7 +148,7 @@
           </h6>
         </div>
 
-        <div id="collapse-q7" class="collapse show">
+        <div id="collapse-q7" class="collapse">
           <div class="card-body">
                          
                     <ul style="list-style:circle; padding-left:2em;">
@@ -177,7 +177,7 @@
           </h6>
         </div>
 
-        <div id="collapse-q8" class="collapse show">
+        <div id="collapse-q8" class="collapse">
           <div class="card-body">
                Yes, you can dispute particular transactions.
           </div>
@@ -192,7 +192,7 @@
           </h6>
         </div>
 
-        <div id="collapse-q9" class="collapse show">
+        <div id="collapse-q9" class="collapse">
           <div class="card-body">
                   </a>            
                     <p>
@@ -224,7 +224,7 @@
           </h6>
         </div>
 
-        <div id="collapse-q10" class="collapse show">
+        <div id="collapse-q10" class="collapse">
           <div class="card-body">
                Check 21 creates a new legal document, called the “substitute check,” which can be used for proof of payment or for any other
                     reason that require an original canceled check. Beginning October 28, 2004, you may find a check like this in your bank statement as
@@ -241,7 +241,7 @@
           </h6>
         </div>
 
-        <div id="collapse-q11" class="collapse show">
+        <div id="collapse-q11" class="collapse">
           <div class="card-body">
                It is a type of account that allows businesses to accept payments by check. A member account is established under
                         an agreement between CheckDigit2Pay and a member for the settlement of transactions. Members are legally held by
@@ -258,7 +258,7 @@
           </h6>
         </div>
 
-        <div id="collapse-q12" class="collapse show">
+        <div id="collapse-q12" class="collapse">
           <div class="card-body">
                  Check 21 supersedes any state law in the United States, including provisions of the Uniform Commercial Code or state laws
                     that are inconsistent with this new federal law.
@@ -275,7 +275,7 @@
           </h6>
         </div>
 
-        <div id="collapse-q13" class="collapse show">
+        <div id="collapse-q13" class="collapse">
           <div class="card-body">
               No, only images that meet the “substitute check” requirements qualify. Typical check image statements are not considered
                     substitute checks.
@@ -292,7 +292,7 @@
           </h6>
         </div>
 
-        <div id="collapse-q14" class="collapse show">
+        <div id="collapse-q14" class="collapse">
           <div class="card-body">
               No, only images that meet the “substitute check” requirements qualify. Typical check image statements are not considered
               substitute checks.
@@ -309,7 +309,7 @@
           </h6>
         </div>
 
-        <div id="collapse-q15" class="collapse show">
+        <div id="collapse-q15" class="collapse">
           <div class="card-body">
                The bank will return the check within 1-3 business days. However, because we do 100% customer and bank verification. Check2pay
                     minimized this type of issue.
@@ -326,7 +326,7 @@
           </h6>
         </div>
 
-        <div id="collapse-q16" class="collapse show">
+        <div id="collapse-q16" class="collapse">
           <div class="card-body">
                 Checks you write should clear sooner, raising the possibility that some checks will be returned NSF if there were non-sufficient funds
                     in the account when you wrote the check. You should not write checks for amounts that can’t be covered by funds already in your
@@ -344,7 +344,7 @@
           </h6>
         </div>
          
-        <div id="collapse-q17" class="collapse show">
+        <div id="collapse-q17" class="collapse">
           <div class="card-body">
                 No, even the banks cannot guarantee the availability of the fund. It might be available in time of verification but the fund might not be
                     available even after 30 minute.
@@ -358,7 +358,7 @@
 
       
     </div>
-<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+<!--++++++++++++++++++++++++++++++++++++++++++++++++ Collapse end ++++++++++++++++++++++++++++++++++++++++++
 
       <div class="row">
       <div class="col-sm-4 bg-secondary"  style="border:1px solid skyblue">Equal Width
@@ -420,6 +420,29 @@
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
     crossorigin="anonymous"></script>
+
+
+
+ <script>
+           //init tooltips
+            $('.panel-collapse.in').collapse('hide', function() {
+               $('#collapse-q1').collapse('show');
+                 });
+
+
+           $('[data-toggle = "tooltip"]').tooltip();
+         
+           function showTooltip() {
+             $('#Hello').tooltip('show')
+           }
+             function hideTooltip() {
+             $('#Hello').tooltip('hide')
+             }
+             function toggleTooltip() {
+             $('#Hello').tooltip('toggle')
+
+           }
+
 
     </body>
     </html>
