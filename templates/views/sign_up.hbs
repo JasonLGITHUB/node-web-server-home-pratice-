@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+  <html lang="en">
+ <body>
+     
+        {{>header}}
+      
+
+ 
+                                  <link rel="stylesheet" href="/css/register.css" >
+
+
+
+                                       <title>Merchant Register</title>
+                                        
+<!---+++++++++++++++++++++++++++++++++++++++++++++++ header end +++++++++++++++++++++++++++++++-->
+<form>
+<form method=" post" action"add_customer_info"  
+<form name="RegisterForm" method="post" action="MerchantApplication" id="ClientRegisterForm">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="C4A9FBD8" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWPALPhJSsCwKLoM77BgL50tmJCwLV3rbsCgKk5b/rCwKz5sfUDQLag7D7CQLl1rzhDQKopL7tBAKypNRkAv2M9skHAvyZ9pAPAv2BgZYBAq6brKsCAqjZn9ADAtu3qNsCAo3PxM8JAt2j8oMFAs686PMHAr2X9MoNAv/o068HAvebtoIMAtr7l34CgNbb3gcCi+uSogwCj7e8gAQCpoK0ugcCzOzgwQ0CqoyjuQMC8orJ6QoC7YrJ6QoCs7XbQgKstdtCAuCSg8QBAv+Sg8QBAoSvwKkDAtGl2fEOAtz54fYLArzhlFICo7voPwL8/p7aBQK0w/jlCwKzlI2eCAK8+6fwBAK9+6fwBAK++6fwBAK/+6fwBAK4+6fwBAK5+6fwBAK6+6fwBAKr+6fwBAKk+6fwBALBx8KnAgLJ4frZBwL90KKTCAL90OqSCAK+pMCHAgLXs6LJDgLJiensDwKokaLfCg7X2WUTjeJLAlz/AHLWVAxxbTyK" />
+</div>
+<!--=============================================================Form start=====================================-->
+        
+        
+    <div class="creative_feature_area">
+    <div class="container-fluid" style="margin-top:1em;padding-top:1em;padding-bottom:5em;">
+        <div class="container">
+            <div class="row justify-content-md-center" style="padding:1em;">
+                <div class="col col-lg-12">
+    <div class="card" style="margin-bottom:2em;">
+                        <div class="card-body">
+                            <div class="card-title"><b>YOUR COMPANY INFORMATION</b></div> 
+                            <hr/>
+                                  <div class="col-sm-10" style="margin-bottom:2em;"></div>
+                                  <div class="form-group row"></div>
+ <!-- <div class="creative_feature_area">
+    <div class="container-fluid" style="margin-top:7em;padding-top:2em;padding-bottom:5em;">
+
+  <div class = "container center_div">
+  <div class="form-row">
+    <div class="form-row"> -->
+<div class="col-md-10 col-md-offset-2" id="form_container">  <!--Back ground shadow =-->
+<div class="form-group col-md-12">
+    <label for="inputCopnayName">Company Name</label>
+    <input type="text" class="form-control" id="inputCompanyName" placeholder="Axson Inc.">
+</div> 
+
+    <div class="form-group col-md-6">
+      <label for = "inputStreetNo"> Street Number </label> 
+      <input type="text" class="form-control" id="inputStreetNo"  placeholder="12345">
+    </div>
+    <div class="form-group col-md-6">
+      <label for = "inputSuiteNo">Suite Number</label> 
+      <input type="text" class="form-control" id="inputSuiteNo"  placeholder="#12 A">
+    </div>
+     <div class="form-group col-md-12">
+    <label for="inputStreetName">Address</label>
+    <input type="text" class="form-control" id="inputStreetName" placeholder=" Main St">
+  </div>
+  <div class="form-group col-md-12">
+      <label for="inputCity">City</label>
+      <input type="text" class="form-control" id="inputCity"  placeholder=" Los Angeles"    >
+    </div>
+    <div class="form-group col-md-12">
+      <label for="inputCity">State/Province</label>
+      <input type="text" class="form-control" id="inputState"  placeholder="California"    >
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputZip">Zip</label>
+      <input type="text" class="form-control" id="inputZip" placeholder="92001">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputCountry">Country</label>
+      <input type="text" class="form-control" id="inputCountry" placeholder="United States">
+  </div>
+
+  <!--======================================================================WEb URL  ====================================-->
+  <div class="card-title"><b>WEBSITE INFORMATION</b></div>
+                            <hr />
+                            <div class="col-sm-12" style="margin-bottom:2em;">
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label">Website URL</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="inputWebsite"  maxlength="100" placeholder="www.axson.com"/>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label">Product / Services</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" maxlength="50" id="inputProduct" placeholder="Promotion Gift Product"/>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label">Descriptor</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" maxlength="50" id="inputproductDescriptor" class="form-control" placeholder="USB fans"/>
+                                    </div>
+                                </div>
+                            </div>
+             <div class="card-title"><b>MANAGER / OWNER INFORMATION</b></div>
+                            <hr />
+                            <div class="col-sm-12" style="margin-bottom:2em;">
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label">Full Name</label>
+                                    <div class="col-sm-10">
+                                        <input type="text"  maxlength="50" id="inputtManagerName" class="form-control" placeholder="Manager Name"/>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label">Street Number</label>
+                                    <div class="col-sm-4">
+                                        <input type="text" placeholder="Manager Street No."  maxlength="10" id="ManagerStreetNo" class="form-control" onchange="NumericBox_FindItem('ctl00_ContentPlaceHolder1_txtManagerStreetNo').OnTextChange(this);" onkeypress="return NumericBox_FindItem('ctl00_ContentPlaceHolder1_txtManagerStreetNo').AddNumericItem(event, this);" />
+                                    </div>
+                                    <label class="col-sm-2 col-form-label">Unit Number</label>
+                                    <div class="col-sm-4">
+                                        <input type="text"  maxlength="15" id="ManagerUnitNo" class="form-control" PlaceHolder ="Manager Unit No."/>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label">Street Name</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" maxlength="50" id="ManagerStreetName" class="form-control" placeholder="Manager Street name" />
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label">City / Town</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" id="ManagerCity"   maxlength="50"  class="form-control" placeholder = " Manager City"/>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label">State / Province</label>
+                                    <div class="col-sm-10">
+                                        <input type="text"   maxlength="50" id=" ManagerState" class="form-control"  PlaceHolder="ManagerState"/>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label">Zip Code</label>
+                                    <div class="col-sm-4">
+                                        <input  type="text" maxlength="50" id="ManagerZipCode" class="form-control" PlaceHolder="Manager Zip Code "/>
+                                    </div>
+                                    <label class="col-sm-2 col-form-label">Country</label>
+                                    <div class="col-sm-4">
+                                        <input type="text"    maxlength="50" id="ManagerCountry" class="form-control" PlaceHolder="Manager Country"/>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label">Phone Number</label>
+                                    <div class="col-sm-4">
+                                        <input type="text" maxlength="25" id="ManagerPhoneNo" class="form-control" PlaceHolder="Manager Phone No."/>
+                                    </div>
+                                    <label class="col-sm-2 col-form-label">Mobile Number</label>
+                                    <div class="col-sm-4">
+                                        <input type="text" maxlength="25" id="ManagerMobileNo" class="form-control" PlaceHolder="Manager Mobile No."/>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label">Email Address</label>
+                                    <div class="col-sm-4">
+                                        <input  type="text" maxlength="50" id="ManagerEmailAddress" class="form-control" PlaceHolder="Manager Email Address"/>
+                                    </div>
+                                    <label class="col-sm-2 col-form-label">Skype ID</label>
+                                    <div class="col-sm-4">
+                                        <input  type="text" maxlength="50" id="SkypeId" class="form-control" PlaceHolder="SkypeId"/>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label">SSN / EIN</label>
+                                    <div class="col-sm-4">
+                                        <input  type="password" maxlength="20" id=" ManagerSsn" class="form-control" PlaceHolder="ManagerSSN" />
+                                    </div>
+                                    <label class="col-sm-2 col-form-label">Passport / Drivers Number</label>
+                                    <div class="col-sm-4">
+                                        <input  type="text" maxlength="20" id="ManagerPassport" class="form-control" PlaceHolder="Manager Passport No."/>
+                                    </div>
+                                </div>
+                            </div>    
+                            <div class="card-title"><b>CUSTOMER SERVICE INFORMATION</b></div>
+                            <hr />
+                            <div class="col-sm-12" style="margin-bottom:2em;">
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label">Contact Name</label>
+                                    <div class="col-sm-10">
+                                        <input name="ctl00$ContentPlaceHolder1$txtContactName" type="text" maxlength="50" id="ctl00_ContentPlaceHolder1_txtContactName" class="form-control" />
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label">Phone Number</label>
+                                    <div class="col-sm-10">
+                                        <input name="ctl00$ContentPlaceHolder1$txtContactPhoneNo" type="text" maxlength="25" id="ctl00_ContentPlaceHolder1_txtContactPhoneNo" class="form-control" />
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label">Email Address</label>
+                                    <div class="col-sm-10">
+                                        <input name="ctl00$ContentPlaceHolder1$txtContactEmailAddress" type="text" maxlength="50" id="ctl00_ContentPlaceHolder1_txtContactEmailAddress" class="form-control" />
+                                    </div>
+                                </div>
+                            </div>            
+                            <!--=============================== ===========================processing history ==========================================-->
+                            <div class="card-title"><b>PROCESSING HISTORY INFORMATION</b></div>
+                            <hr />
+                            <div class="col-sm-12" style="margin-bottom:2em;">
+                                <div class="form-group row">
+                                    <label class="col-sm-6 col-form-label">Do you currently accept credit cards?</label>
+                                    <div class="col-sm-6">
+                                        <select name="ctl00$ContentPlaceHolder1$cboCreditCard" id="ctl00_ContentPlaceHolder1_cboCreditCard" class="form-control">
+	<option value="0">NO</option>
+	<option value="1">YES</option>
+
+</select>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-6 col-form-label">Have you ever processed before?</label>
+                                    <div class="col-sm-6">
+                                        <select name="ctl00$ContentPlaceHolder1$cboProcess" id="ctl00_ContentPlaceHolder1_cboProcess" class="form-control">
+	<option value="0">NO</option>
+	<option value="1">YES</option>
+
+</select>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-6 col-form-label">Have you ever had a Merchant Account terminated?</label>
+                                    <div class="col-sm-6">
+                                        <select name="ctl00$ContentPlaceHolder1$cboTerminated" id="ctl00_ContentPlaceHolder1_cboTerminated" class="form-control">
+	<option value="0">NO</option>
+	<option value="1">YES</option>
+
+</select>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-4 col-form-label">If <b>Yes</b>, please state the reason</label>
+                                    <div class="col-sm-8">
+                                        <input name="ctl00$ContentPlaceHolder1$txtReason" type="text" maxlength="50" id="ctl00_ContentPlaceHolder1_txtReason" class="form-control" />
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-4 col-form-label">Former / Current Processor</label>
+                                    <div class="col-sm-8">
+                                        <input name="ctl00$ContentPlaceHolder1$txtProcessor" type="text" maxlength="50" id="ctl00_ContentPlaceHolder1_txtProcessor" class="form-control" />
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-4 col-form-label">Time with Processor</label>
+                                    <div class="col-sm-8">
+                                        <input name="ctl00$ContentPlaceHolder1$txtTime" type="text" maxlength="50" id="ctl00_ContentPlaceHolder1_txtTime" class="form-control" />
+                                    </div>
+                                </div>
+                            </div>
+                            <!--==========================================================TRANSACTION INFORMATION History====================================-->
+                             <div class="card-title"><b>TRANSACTION INFORMATION</b></div>
+                            <hr />
+                            <div class="col-sm-12" style="margin-bottom:2em;">
+                                <div class="form-group row">
+                                    <label class="col-sm-4 col-form-label">Estimated Total Sales Per Month</label>
+                                    <div class="col-sm-8">
+                                        <input name="ctl00$ContentPlaceHolder1$txtTotalSales" type="text" id="ctl00_ContentPlaceHolder1_txtTotalSales" class="form-control" onchange="NumericBox_FindItem('ctl00_ContentPlaceHolder1_txtTotalSales').OnTextChange(this);" onkeypress="return NumericBox_FindItem('ctl00_ContentPlaceHolder1_txtTotalSales').AddNumericItem(event, this);" onfocus="NumericBox_FindItem('ctl00_ContentPlaceHolder1_txtTotalSales').ParseRemove(this);" onblur="NumericBox_FindItem('ctl00_ContentPlaceHolder1_txtTotalSales').ParseAdd(this);" />
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-4 col-form-label">Number of Transactions Per Month</label>
+                                    <div class="col-sm-8">
+                                        <input name="ctl00$ContentPlaceHolder1$txtNoTransactions" type="text" id="ctl00_ContentPlaceHolder1_txtNoTransactions" class="form-control" onchange="NumericBox_FindItem('ctl00_ContentPlaceHolder1_txtNoTransactions').OnTextChange(this);" onkeypress="return NumericBox_FindItem('ctl00_ContentPlaceHolder1_txtNoTransactions').AddNumericItem(event, this);" />
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-4 col-form-label">Minimum Ticket Amount</label>
+                                    <div class="col-sm-2">
+                                        <input name="ctl00$ContentPlaceHolder1$txtMinimumTicket" type="text" id="ctl00_ContentPlaceHolder1_txtMinimumTicket" class="form-control" onchange="NumericBox_FindItem('ctl00_ContentPlaceHolder1_txtMinimumTicket').OnTextChange(this);" onkeypress="return NumericBox_FindItem('ctl00_ContentPlaceHolder1_txtMinimumTicket').AddNumericItem(event, this);" onfocus="NumericBox_FindItem('ctl00_ContentPlaceHolder1_txtMinimumTicket').ParseRemove(this);" onblur="NumericBox_FindItem('ctl00_ContentPlaceHolder1_txtMinimumTicket').ParseAdd(this);" />
+                                    </div>
+                                    <label class="col-sm-4 col-form-label">Maximum Ticket Amount</label>
+                                    <div class="col-sm-2">
+                                        <input name="ctl00$ContentPlaceHolder1$txtMaximumTicket" type="text" id="ctl00_ContentPlaceHolder1_txtMaximumTicket" class="form-control" onchange="NumericBox_FindItem('ctl00_ContentPlaceHolder1_txtMaximumTicket').OnTextChange(this);" onkeypress="return NumericBox_FindItem('ctl00_ContentPlaceHolder1_txtMaximumTicket').AddNumericItem(event, this);" onfocus="NumericBox_FindItem('ctl00_ContentPlaceHolder1_txtMaximumTicket').ParseRemove(this);" onblur="NumericBox_FindItem('ctl00_ContentPlaceHolder1_txtMaximumTicket').ParseAdd(this);" />
+                                    </div>
+                                </div>
+                            </div>
+                            <!--============================================================== Client Other INFO=============================================-->
+                             <div class="card-title"><b>OTHER INFORMATION</b></div>
+                            <hr />
+                            <div class="col-sm-12" style="margin-bottom:2em;">
+                                <div class="form-group row">
+                                    <label class="col-sm-4 col-form-label">How Did You Hear About Us?</label>
+                                    <div class="col-sm-8">
+                                        <select name="ctl00$ContentPlaceHolder1$cboAboutUs" id="ctl00_ContentPlaceHolder1_cboAboutUs" class="form-control">
+	<option selected="selected" value=""></option>
+	<option value="1">Sales Person</option>
+	<option value="2">Search Engine</option>
+	<option value="3">TV Commercial</option>
+	<option value="4">Radio Commercial</option>
+	<option value="5">Newspaper Ads</option>
+	<option value="6">Facebook</option>
+	<option value="7">Twitter</option>
+	<option value="8">Linkedin</option>
+	<option value="9">YouTube</option>
+
+</select>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-4 col-form-label">Name of Agent</label>
+                                    <div class="col-sm-8">
+                                        <input name="ctl00$ContentPlaceHolder1$txtAgentName" type="text" maxlength="30" id="ctl00_ContentPlaceHolder1_txtAgentName" class="form-control" />
+                                    </div>
+                                </div>
+                            </div>
+<!--================================================================Credentials Infomation=======================================-->
+<div class="card-title"><b>USER CREDENTIALS INFORMATION</b></div>
+                            <hr />
+                            <div class="col-sm-12">
+                                <div class="form-group row">
+                                    <label class="col-sm-4 col-form-label">Username <i>(atleast 9 characters)</i></label>
+                                    <div class="col-sm-8">
+                                        <input name="ctl00$ContentPlaceHolder1$txtUsername" type="text" maxlength="20" id="ctl00_ContentPlaceHolder1_txtUsername" class="form-control" />
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-4 col-form-label">Password <i>(atleast 9 characters)</i></label>
+                                    <div class="col-sm-8">
+                                        <input name="ctl00$ContentPlaceHolder1$txtPassword" type="password" maxlength="20" id="ctl00_ContentPlaceHolder1_txtPassword" class="form-control" />
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-4 col-form-label">Re-type password</label>
+                                    <div class="col-sm-8">
+                                        <input name="ctl00$ContentPlaceHolder1$txtPassword2" type="password" maxlength="20" id="ctl00_ContentPlaceHolder1_txtPassword2" class="form-control" />
+                                    </div>
+                                </div>
+                                <hr />
+                                <script type="text/javascript">
+                                //<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ContentPlaceHolder1$ScriptManager1', document.getElementById('aspnetForm'));
+Sys.WebForms.PageRequestManager.getInstance()._updateControls(['tctl00$ContentPlaceHolder1$UpdatePanel1'], [], [], 90);
+//]]>
+</script>
+
+                                <div id="ctl00_ContentPlaceHolder1_UpdatePanel1">
+	
+                                        <p>
+                                            <strong>Type the characters show in the picture below.</strong>
+                                            <a onclick="var strReturn; strReturn=window.showModalDialog('../Support/SupportModal.aspx',null,'status:no;dialogWidth:700px;dialogHeight:350px;dialogHide:true;directories=no;menubar=no;titlebar=no;help:no;scroll:yes');" id="ctl00_ContentPlaceHolder1_lnkWhy" title="Click here to get help prevent automated programs from misusing your ID" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder1$lnkWhy&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">Why?</a></td>
+                                        </p>
+                                        <div class="row">
+                                            <div class="col-sm-2" style="padding-top:1em;">
+                                                Picture
+                                            </div>
+                                            <div class="col-sm-10">
+                                                <div style='background-color:White;'><img src="CaptchaImage.axd?guid=8f890f7e-7c49-4ca0-84d5-0ef0c67533c4" border='0' width=200 height=50></div>
+                                            </div>
+                                        </div>
+                                        <div class="row" style="padding-top:1em;">
+                                            <div class="col-sm-12">
+                                                <div class="form-group row">
+                                                    <label class="col-sm-2 col-form-label">Characters</label>
+                                                    <div class="col-sm-10">
+                                                        <div class="input-group mb-3">
+                                                            <input name="ctl00$ContentPlaceHolder1$txtCapcha" type="text" maxlength="10" id="ctl00_ContentPlaceHolder1_txtCapcha" title="The letters are not case sensitive. Do not type spaces between the numbers and letters" class="form-control" />
+                                                            <input type="image" name="ctl00$ContentPlaceHolder1$imgRefresh" id="ctl00_ContentPlaceHolder1_imgRefresh" title="Click here to refresh and get a new picture" class="btn btn-light" src="../../Images/PicReload.gif" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder1$imgRefresh&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" style="height:2em;border-width:0px;" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    
+</div>
+                            </div>
+                        </div>
+                        <!--=================================================================footer================================================-->
+                        <div class="card-footer"> 
+                            <input type="submit" name="ctl00$ContentPlaceHolder1$btnSave" value="Submit" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder1$btnSave&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="ctl00_ContentPlaceHolder1_btnSave" class="btn btn-primary pull-right" class="button pull-right"> <!--buton float-right-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) 
+    <script type="text/javascript" src="../../Content/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $("#btnLogin").parent().attr("style", "display:none;");
+
+            $("#btnSignUp").parent().attr("style", "display:none;");
+
+            $(".navbar_fixed").attr("style", "background:white;");
+
+            $(window).scroll(function () {
+                $(".navbar_fixed").attr("style", "background:white;");
+            });
+
+            if (navigator.userAgent.match(/Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile/i)) {
+                $(".navbar-toggler").find("span").attr("style", "background:black");
+
+                $("#btnLogin").parent().attr("style", "padding:0px 20px;margin-bottom:1rem;");
+
+                $("#btnSignUp").parent().attr("style", "padding:0px 20px;margin-bottom:1rem;");
+
+            } else {
+                $(".navbar_fixed").attr("style", "background:white;");
+
+                $(window).scroll(function () {
+                    $(".navbar_fixed").attr("style", "background:white;");
+                });
+
+                $(".nav-link").each(function (index) {
+                    $(this)
+                        .attr("style", "color:#2c2e2f;")
+                        .mouseover(function () {
+                            $(this).attr("style", "color:#20c997;")
+                            fnSetStyle($(this));
+                        })
+                        .mouseout(function () {
+                            $(this).attr("style", "color:#2c2e2f;")
+                            fnSetStyle($(this));
+                        });
+                    fnSetStyle($(this));
+                });
+            }
+        });
+
+    </script>
+
+        </div>
+        
+<script type="text/javascript">
+//<![CDATA[
+var eWorld_NumericBox_Items =  new Array(new NumericBox_Item('ctl00_ContentPlaceHolder1_txtCompanyStreetNo', false, true, "^\\d*?$", -1, '$', '.', ',', -1, '', false), new NumericBox_Item('ctl00_ContentPlaceHolder1_txtManagerStreetNo', false, true, "^\\d*?$", -1, '$', '.', ',', -1, '', false), new NumericBox_Item('ctl00_ContentPlaceHolder1_txtTotalSales', false, true, "^\\$?(\\d{0,3}\\,?(\\d{3}\\,?)*)$", -1, '$', '.', ',', -1, '', true), new NumericBox_Item('ctl00_ContentPlaceHolder1_txtNoTransactions', false, true, "^\\d*?$", -1, '$', '.', ',', -1, '', false), new NumericBox_Item('ctl00_ContentPlaceHolder1_txtMinimumTicket', true, true, "^\\$?(\\d{0,3}\\,?(\\d{3}\\,?)*(\\.\\d*)?)$", -1, '$', '.', ',', -1, '', true), new NumericBox_Item('ctl00_ContentPlaceHolder1_txtMaximumTicket', true, true, "^\\$?(\\d{0,3}\\,?(\\d{3}\\,?)*(\\.\\d*)?)$", -1, '$', '.', ',', -1, '', true));
+//]]>
+    </script>
+
+
+    <script type="text/javascript">
+//<![CDATA[
+Sys.Application.initialize();
+//]]>
+    </script> -->
+
+</form>
+<!--....................................................................form end............................................ ..................-->
+
+   <!--================Footer Area =================-->
+        <footer class="footer_area">
+            <div class="copy_right_area">
+                <div class="container">
+                    <div class="row justify-content-center" style="height:3em;padding-top:1ex;">
+                        <h5 class="text-light">Copyright &copy; 2019 Check4DigiPay</h5>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--================End Footer Area =================-->
+
+  <!-- Rev slider js -->
+        <script type="text/javascript" src="../../Content/vendor/revolution/js/jquery.themepunch.tools.min.js"></script>
+        <script type="text/javascript" src="../../Content/vendor/revolution/js/jquery.themepunch.revolution.min.js"></script>
+        <script type="text/javascript" src="../../Content/vendor/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+        <script type="text/javascript" src="../../Content/vendor/revolution/js/extensions/revolution.extension.video.min.js"></script>
+        <script type="text/javascript" src="../../Content/vendor/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+        <script type="text/javascript" src="../../Content/vendor/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+        <script type="text/javascript" src="../../Content/vendor/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+        <script type="text/javascript" src="../../Content/vendor/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+        <!-- Extra plugin css -->
+        <script type="text/javascript" src="../../Content/vendor/counterup/jquery.waypoints.min.js"></script>
+        <script type="text/javascript" src="../../Content/vendor/counterup/jquery.counterup.min.js"></script>
+        <script type="text/javascript" src="../../Content/vendor/counterup/apear.js"></script>
+        <script  type="text/javascript"src="../../Content/vendor/counterup/countto.js"></script>
+        <script  type="text/javascript"src="../../Content/vendor/owl-carousel/owl.carousel.min.js"></script>
+        <script type="text/javascript" src="../../Content/vendor/parallaxer/jquery.parallax-1.1.3.js"></script>
+        <!--Tweets-->
+        
+
+        <script type="text/javascript" src="../../Content/js/theme.js"></script>
+
+        <script type="text/javascript">
+
+            if (navigator.userAgent.match(/Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile/i)) {
+
+                $("#btnLogin").parent().attr("style", "padding:0px 20px;margin-bottom:1rem;");
+
+                $("#btnSignUp").parent().attr("style", "padding:0px 20px;margin-bottom:1rem;");
+
+            }
+
+            function fnSetStyle($element) {
+
+                if (fnGetUrlParameter("menu") == $element.text().replace(/\s/g, '')) {
+                    var style = $element.attr("style");
+                    style = style + "font-weight: bold;";
+
+                    $element.attr("style", style);
+                }
+            }
+
+            function fnGetUrlParameter(sParam) {
+                var sPageURL = window.location.search.substring(1);
+                var sURLVariables = sPageURL.split('&');
+
+                for (var i = 0; i < sURLVariables.length; i++) {
+                    var sParameterName = sURLVariables[i].split('=');
+                    if (sParameterName[0] == sParam) {
+                        return sParameterName[1];
+                    }
+                }
+            }
+
+            function NavToLogin() {
+                //location.href = '@Url.Action("Login", "LandingPage")';
+                window.location = '../../Web/Authentication/Login.aspx';
+            }
+
+            function NavToSignUp() {
+                //location.href = '@Url.Action("SignUp", "LandingPage")';
+                window.location = '../../Web/Merchant/MerchantApplication.aspx';
+            }
+        </script>
+
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+   
+   
+    </body>
+</html>

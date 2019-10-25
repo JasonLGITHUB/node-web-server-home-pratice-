@@ -48,8 +48,16 @@ app.get('/MerchantRegisterForm', (req, res) => {
         name: 'Axson Engineering'
     })
 })
-app.get('/Login', (req, res) => {
-    res.render('Login', {
+
+app.get('/sign_up', (req, res) => {
+    res.render('sign_up', {
+        clientsText: 'This is some helpful text for Merchants !',
+        title: 'Merchant Sign Up',
+        name: 'Axson Engineering'
+    })
+})
+app.get('/login', (req, res) => {
+    res.render('login', {
         clientsText: 'This is a Login window for Clients !',
         title: 'Clients Login',
         name: 'Axson Engineering, Copy right:Jason Liang'
@@ -163,31 +171,82 @@ app.get('/products', (req, res)=> {
 
     })
 })
-
+//----------------------------------------------------------404 -----------------------------
 app.get('/help/*', (req, res) => {
     res.render('404', {
         title: '404',
-        name: 'Andrew Mead',
+        name: 'Jason',
         errorMessage: 'Help article not found.'
     })
 })
 
-app.get('/digiPay/*', (req, res) => {
+app.get('/sign_up/*', (req, res) => {
     res.render('404', {
         title: '404',
-        name: 'Andrew Mead',
-        errorMessage: 'Check 2 Pay Help article not found.'
+        name: 'Jason',
+        errorMessage: ' Sign up article not found.'
     })
 })
 
 app.get('*', (req, res) => {
     res.render('404', {
         title: '404',
-        name: 'Andrew Mead',
+        name: 'Jason',
+        errorMessage: 'Page not found.'
+    })
+})
+app.get('/about/*', (req, res) => {
+    res.render('404', {
+        title: '404',
+        name: 'Jason',
+        errorMessage: 'Page not found.'
+    })
+})
+app.get('/login/*', (req, res) => {
+    res.render('404', {
+        title: '404',
+        name: 'Jason',
+        errorMessage: 'Page not found.'
+    })
+})
+app.get('/clients/*', (req, res) => {
+    res.render('404', {
+        title: '404',
+        name: 'Jason',
+        errorMessage: 'Page not found.'
+    })
+})
+app.get('/partners/*', (req, res) => {
+    res.render('404', {
+        title: '404',
+        name: 'Jason',
+        errorMessage: 'Page not found.'
+    })
+})
+app.get('/compliance/*', (req, res) => {
+    res.render('404', {
+        title: '404',
+        name: 'Jason',
         errorMessage: 'Page not found.'
     })
 })
 
+app.get('/securitycenter/*', (req, res) => {
+    res.render('404', {
+        title: '404',
+        name: 'Jason',
+        errorMessage: 'Page not found.'
+    })
+})
+app.get('/faq/*', (req, res) => {
+    res.render('404', {
+        title: '404',
+        name: 'Jason',
+        errorMessage: 'Page not found.'
+    })
+})
+
+//---------------------------------------------------port-----------------------
 app.listen(port, () => {
     console.log('Server is up on port' + port)
 })
