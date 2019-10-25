@@ -56,8 +56,8 @@ app.get('/sign_up', (req, res) => {
         name: 'Axson Engineering'
     })
 })
-app.get('/login', (req, res) => {
-    res.render('login', {
+app.get('/sign_in', (req, res) => {
+    res.render('sign_in', {
         clientsText: 'This is a Login window for Clients !',
         title: 'Clients Login',
         name: 'Axson Engineering, Copy right:Jason Liang'
@@ -202,7 +202,7 @@ app.get('/about/*', (req, res) => {
         errorMessage: 'Page not found.'
     })
 })
-app.get('/login/*', (req, res) => {
+app.get('/sign_in/*', (req, res) => {
     res.render('404', {
         title: '404',
         name: 'Jason',
